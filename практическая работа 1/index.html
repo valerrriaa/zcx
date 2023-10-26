@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Преподователь</title>
+    <script>
+        var Teacher = new Object();
+        Teacher.name = " Никола ";
+        Teacher.surname = "Тесла ";
+        Teacher.patronymic = "Милутинович ";
+        Teacher.ocupation = "Пеподователь спец дисциплин ";
+        Teacher.degree = " Высшее";
+        Teacher.category = " Вторая";
+        Teacher.education = "Грацский технический университет ";
+        Teacher.qualification = "Физик ";
+        Teacher.specialty = "программное обеспечение ";
+        Teacher.discipline = ["физика ", "химия"];
+        Teacher.stage = "10";
+        Teacher.email = "tesla@mail.ru";
+        Teacher.site = "tesla.ru";
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="#">О проекте</a>
+        <a href="#">Курсы</a>
+        <a href="#">Преподователи</a>
+        <a href="#">Контакты</a>
+    </div>
+
+    <section class="info">
+        <div>
+            <img class="foto" src="img/nicola.png">
+        </div>
+        <div class="content" style="text-align: left; font-size: large">
+            <h1 class="name">
+                <script>
+                    let line1 = `
+                ${Teacher.surname}<br>${Teacher.name}${Teacher.patronymic}
+                `;
+
+                    document.write(line1);
+                </script>
+            </h1>
+            <h1 class="ocupation">
+                <script>
+                    document.write(Teacher.ocupation);
+                </script>
+            </h1>
+            <h2>Основная информация:</h2>
+            <b class="ul1">
+                <script>
+                    let line2 = `
+                <ul>
+                    <li>Уровень образования: ${Teacher.degree}</li>
+                    <li>образования: ${Teacher.education}</li>
+                    <li>Квалификация: ${Teacher.qualification}</li>
+                    <li>Специализация: ${Teacher.specialty}</li>
+                    <li>Преподоваемые дисциплины:
+                        <ul>
+                            <li>${Teacher.discipline[0]}</li>
+                            <li>${Teacher.discipline[1]}</li>
+                        </ul>
+                    </li>
+                </ul>
+        `;
+                    document.write(line2);
+                </script>
+            </b>
+            <h2 class="dop">Дополнительная информация:</h2>
+            <b class="ul2">
+                <script>
+                    Teacher.category=prompt('категория какая?',2);
+                    Teacher.stage=prompt('стаж какой', 10)
+                    Teacher.email=prompt('ваша электронная почта', "tesla@mail.ru" );
+                    Teacher.site=prompt('ваш личный сайт' ,"tesla.ru");
+                    let line3 = `
+                <ul>
+                    <li>Категория: ${Teacher.category}</li>
+                    <li>Стаж: ${Teacher.stage}</li>
+                    <li>E-mail: ${Teacher.email}</li>
+                    <li>Персональный сайт: ${Teacher.site}</li>
+                </ul>
+        `;
+                    document.write(line3);
+                </script>
+            </b>
+        </div>
+    </section>
+
+</body>
+
+</html>

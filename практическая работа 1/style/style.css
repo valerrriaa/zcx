@@ -1,0 +1,57 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    height: 100%;
+    background-image:url(../img/ttt.jpg);
+    background-size: 100%;
+    background-attachment: fixed ;
+    overflow-x: hidden;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background: #5f7b96;
+    margin-bottom: 50px;
+    line-height: 70px;
+    font-size: 25px;
+    display: flex;
+    padding-left: 500px;
+}
+a{
+    text-decoration: none;
+    color: rgb(244, 250, 250);
+    padding-left: 20px;
+}
+a:hover{
+    color: rgb(85, 58, 238);
+}
+.foto{
+    width: 550px;
+    height: 600px;
+    padding: 150px;
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.content{
+    margin-top: 200px;
+ 
+}
+.name{
+    font-size: 35px;
+    margin-bottom: 2%;
+}
+.ocupation{
+    margin-bottom: 2%;
+    font-size: 30px;
+}
+.ul1{
+    margin-bottom: 2%;
+   
+}
+.dop{
+    margin-top: 2%;
+}
